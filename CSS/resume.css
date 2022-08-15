@@ -1,7 +1,24 @@
+:root {
+    --color1: #05192D;
+    --color2: #7FB5FF;
+    --color3: #DBDFFD;
+    --text: white;
+    --textbox:#dbdffd41;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* intro */
+  
 .main_head {
     height: 100vh;
-    background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
-    background-color: rgb(135, 239, 199);
+    background-color: var(--color1);
     background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -15,11 +32,12 @@
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    background-color: rgb(248, 239, 222, 0.5);
+    background-color: var(--textbox);
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 12px;
     border-top-left-radius: 12px;
+    color: var(--text);
 }
 
 .name {
@@ -28,4 +46,58 @@
 
 .intro {
     font-size: 1.5rem;
+}
+
+.timeline {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--color1);
+    padding: 40px;
+    font-size: 25px;
+}
+
+.timeline_container {
+    padding: 5px;
+    position: absolute;
+    width: 96%;
+    height: 4rem;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: var(--textbox);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: var(--text);
+}
+
+.body_container {
+    background-color: white;
+    margin-left: 2.1rem;
+    width: 140vh;
+    background-color: var(--color1);
+    color: var(--text);
+}
+
+.side_container {
+    width: 45vh;
+    margin-right: 2.1rem;
+}
+
+.skills {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem;
+    background-color: var(--textbox);
+    padding: 40px;
+    font-size: 25px;
+    height: 18rem;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
