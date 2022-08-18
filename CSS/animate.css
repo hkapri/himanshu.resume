@@ -266,8 +266,8 @@
 	border-radius: 50%;
 	
 	content: "";
-    height: 180px;
+    height: 80vh;
 	left: 10px;
 	position: absolute;
-	width: 180px;
+	width: 100vw;
 }
