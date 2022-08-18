@@ -47,6 +47,7 @@ body::-webkit-scrollbar {
   
 .main_head {
     height: 100vh;
+    width: 100vw;
     background-color: var(--color1);
     background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
     background-repeat: repeat;
@@ -56,6 +57,8 @@ body::-webkit-scrollbar {
 .head_container {    
     padding: 15px;
     position: absolute;
+    height: 75vh;
+    width: 60vw;
     top: 50%;
     left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
@@ -73,17 +76,17 @@ body::-webkit-scrollbar {
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 5vh;
 }
 
 .intro {
-    font-size: 1.5rem;
+    font-size: 3vh;
 }
 
 .discription {
     padding-top: 1rem;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 2.5vh;
 }
 
 .timeline {
@@ -92,13 +95,12 @@ body::-webkit-scrollbar {
     top: 0;
     background-color: var(--color1);
     padding: 40px;
-    font-size: 25px;
 }
 
 .timeline_container {
     padding: 5px;
     position: absolute;
-    width: 96%;
+    width: 96vw;
     height: 4rem;
     top: 50%;
     left: 50%;
@@ -118,15 +120,19 @@ body::-webkit-scrollbar {
 .body_container {
     background-color: white;
     margin-left: 2.1rem;
-    width: 140vh;
+    width: 70vw;
     background-color: var(--color1);
     color: var(--text);
 }
 
 .side_container {
-    width: 45vh;
+    width: 23vw;
     margin-right: 2.1rem;
     height: inherit;
+}
+
+.row_container {
+    width: 100vw;
 }
 
 .skills {
@@ -135,7 +141,7 @@ body::-webkit-scrollbar {
     top: 5rem;
     background-color: var(--textbox);
     padding: 10px;
-    font-size: 25px;
+    font-size: 2.5vw;
     height: 18rem;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -158,7 +164,7 @@ body::-webkit-scrollbar {
     background-color: var(--textbox);
     padding: 10px;
     height: 3rem;
-    width: 50%;
+    width: 24vh;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -183,6 +189,10 @@ body::-webkit-scrollbar {
     padding-left: 1rem;
     font-size: 1.8rem;
 }
+.postgresql {
+    height: 100%;
+    width: 100%;
+}
 
 .top_footer {
     width: 100%;
@@ -197,8 +207,8 @@ body::-webkit-scrollbar {
 .footer_data {
     height: 85.4%;
     padding: 5px;
-    width: 96%;
-    margin-left: 2rem;
+    width: 96vw;
+    margin-left: 2vw;
 }
 
 .bottom_footer_left {
@@ -239,39 +249,39 @@ body::-webkit-scrollbar {
     color: var(--color2);
 }
 
+@media screen and (max-width: 999px) {
+    .main_image {
+      display: none;
+    }
+    .address {
+        display: none;
+      }
+    .head_container {
+        width: 70vw;
+    }
+    .bottom_footer_left {
+        width: 28vw;
+    }
+    .bottom_footer_bottom{
+        display: none!important;
+        width: vh;
+    }
+    .bottom_footer_right {
+        width: 10vw;
+    }
+  }
 
-.arrow{
-    position: absolute;
-    top: 94%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.arrow span{
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid #06A8FF;
-    border-right: 5px solid #06A8FF;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate_down 2s infinite;
-}
-.arrow span:nth-child(2){
-    animation-delay: -0.2s;
-}
-.arrow span:nth-child(3){
-    animation-delay: -0.4s;
-}
-@keyframes animate_down {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
+@media screen and (max-width: 675px) {
+    .links {
+        margin: auto;
+        width: 25vw;
+        height: 18vh;
     }
-    50%{
-        opacity: 1;
+    .side_container {
+        width: 25vw;
     }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+    
+    .skills {
+        width: 25vw;
     }
 }
