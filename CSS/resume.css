@@ -195,8 +195,8 @@ body::-webkit-scrollbar {
 }
 
 .top_footer {
-    width: 100%;
-    height: 14rem;
+    width: 100vw;
+    height: 30vh;
     border-top-style: double;
     border-color: var(--color2);
     border-top-right-radius: 25px;
@@ -275,7 +275,7 @@ body::-webkit-scrollbar {
     .links {
         margin: auto;
         width: 25vw;
-        height: 18vh;
+        height: 16vh;
     }
     .side_container {
         width: 25vw;
@@ -283,5 +283,7 @@ body::-webkit-scrollbar {
     
     .skills {
         width: 25vw;
+        height: 35vh;
+        margin-bottom: 2px;
     }
 }
