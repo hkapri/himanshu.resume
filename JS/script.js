@@ -114,3 +114,11 @@ up.addEventListener('click', ()=>{
     document.styleSheets = 0;
     document.documentElement.scrollTop=0;
 })
+
+$(".Click-here").on('click', function() {
+$(".custom-model-main").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+$(".custom-model-main").removeClass('model-open');
+});
+  
