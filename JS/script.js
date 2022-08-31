@@ -28,6 +28,9 @@ const sc5 = document.getElementById('sc5');
 const sc6 = document.getElementById('sc6');
 const sc7 = document.getElementById('sc7');
 const sc8 = document.getElementById('sc8');
+const click = document.getElementById('Click-here');
+const custom_model = document.getElementById('custom-model-main');
+const close = document.getElementById('close-btn');
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -115,10 +118,17 @@ up.addEventListener('click', ()=>{
     document.documentElement.scrollTop=0;
 })
 
-$(".Click-here").on('click', function() {
-$(".custom-model-main").addClass('model-open');
-}); 
-$(".close-btn, .bg-overlay").click(function(){
-$(".custom-model-main").removeClass('model-open');
-});
+
+click.addEventListener('click', ()=>{
+    custom_model.classList.add('model-open');
+})
+
+close.addEventListener('click', ()=>{
+    custom_model.classList.remove('model-open');
+})
+
+custom_model.addEventListener('click', ()=>{
+    custom_model.classList.remove('model-open');
+})
+
   

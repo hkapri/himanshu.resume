@@ -390,6 +390,7 @@ a:hover, a:visited, a:link, a:active {
     height: 25vh;
     width: 25vw;
     border-radius: 25px;
+    cursor: zoom-in;
 }
 
 .education_heading{
@@ -603,24 +604,11 @@ bottom: -1rem;
 
 /* Pop over */
 
-
-.Click-here {
-    cursor: pointer;
-    background-image: linear-gradient(190deg, #f83600 0%, #fee140 100%);
-    color: #fff;
-    width: 180px;
-    text-align: center;
-    font-size:16px;
-    padding: 18px 0;
-    margin: 0 auto;
-    transition:background-image 3s ease-in-out;
-  }
-  .Click-here:hover{
-    transition:background-image 3s ease-in-out;
-    background-image: linear-gradient(90deg, #fee140 0%, #f83600 100%);
-  }
   .custom-model-main {
     z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(128, 128, 128, 0.6);
     text-align: center;
     overflow: hidden;
     position: fixed;
@@ -637,13 +625,16 @@ bottom: -1rem;
     z-index: -1;
     overflow-x: hidden;
     overflow-y: auto;
+    overscroll-behavior: contain;
   }
   
   .model-open {
     z-index: 99999;
     opacity: 1;
     overflow: hidden;
+    overscroll-behavior: contain;
   }
+  
   .custom-model-inner {
     -webkit-transform: translate(0, -25%);
     -ms-transform: translate(0, -25%);
@@ -656,29 +647,27 @@ bottom: -1rem;
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     display: inline-block;
     vertical-align: middle;
-    width: 600px;
+    width: 61vw;
     margin: 30px auto;
     max-width: 97%;
   }
   .custom-model-wrap {
     display: block;
-    width: 100%;
+    width: 60vw;
+    height: 60vh;
     position: relative;
     background-color: #fff;
     border: 1px solid #999;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    border-radius: 20px;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     background-clip: padding-box;
     outline: 0;
-    text-align: left;
-    padding: 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    max-height: calc(100vh - 70px);
-      overflow-y: auto;
+    overflow-y: auto;
   }
   .model-open .custom-model-inner {
     -webkit-transform: translate(0, 0);
@@ -729,3 +718,7 @@ bottom: -1rem;
     .custom-model-inner{margin-top: 45px;}
   }
   
+  .pop_image{
+    height: 58vh;
+    width: 58vw;
+  }
