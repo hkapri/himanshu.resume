@@ -121,14 +121,17 @@ up.addEventListener('click', ()=>{
 
 click.addEventListener('click', ()=>{
     custom_model.classList.add('model-open');
+    document.body.style.overflow='hidden';
 })
 
 close.addEventListener('click', ()=>{
     custom_model.classList.remove('model-open');
+    document.body.style.overflow='scroll';
 })
 
 custom_model.addEventListener('click', ()=>{
     custom_model.classList.remove('model-open');
+    document.body.style.overflow='scroll';
 })
 
   
