@@ -1,9 +1,11 @@
 .arrow{
     position: absolute;
-    top: 94%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 100;
 }
+
 .arrow span{
     display: block;
     width: 20px;
@@ -14,6 +16,13 @@
     margin: -10px;
     animation: animate_down 2s infinite;
 }
+
+.arrow:hover span{
+    border-bottom: 5px solid #ecf2f5;
+    border-right: 5px solid #ecf2f5;
+}
+
+
 .arrow span:nth-child(2){
     animation-delay: -0.2s;
 }

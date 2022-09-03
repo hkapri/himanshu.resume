@@ -28,9 +28,16 @@ const sc5 = document.getElementById('sc5');
 const sc6 = document.getElementById('sc6');
 const sc7 = document.getElementById('sc7');
 const sc8 = document.getElementById('sc8');
-const click = document.getElementById('Click-here');
+const image_1 = document.getElementById('image_1');
+const image_2 = document.getElementById('image_2');
+const image_1_icon = document.getElementById('image_1_icon');
+const image_2_icon = document.getElementById('image_2_icon');
+const image_3 = document.getElementById('image_3');
+const image_3_icon = document.getElementById('image_3_icon');
 const custom_model = document.getElementById('custom-model-main');
 const close = document.getElementById('close-btn');
+const pop_modal = document.getElementById('pop_image');
+const weblink = document.getElementById('weblink');
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -119,17 +126,49 @@ up.addEventListener('click', ()=>{
 })
 
 
-click.addEventListener('click', ()=>{
+image_1.addEventListener('click', ()=>{
     custom_model.classList.add('model-open');
     document.body.style.overflow='hidden';
+    pop_modal.setAttribute('src', "IMAGES/emipro_group.jpg")
+    weblink.setAttribute('href', 'https://www.emiprotechnologies.com/')
+})
+
+image_2.addEventListener('click', ()=>{
+    custom_model.classList.add('model-open');
+    document.body.style.overflow='hidden';
+    pop_modal.setAttribute('src', "IMAGES/demo2.jpg")
+    weblink.setAttribute('href', 'https://www.emiprotechnologies.com/')
+})
+
+image_1_icon.addEventListener('click', ()=>{
+    custom_model.classList.add('model-open');
+    document.body.style.overflow='hidden';
+    pop_modal.setAttribute('src', "IMAGES/emipro_group.jpg")
+    weblink.setAttribute('href', 'https://www.emiprotechnologies.com/')
+})
+
+image_2_icon.addEventListener('click', ()=>{
+    custom_model.classList.add('model-open');
+    document.body.style.overflow='hidden';
+    pop_modal.setAttribute('src', "IMAGES/emipro_friends.jpg")
+    weblink.setAttribute('href', 'https://www.emiprotechnologies.com/')
+})
+
+image_3.addEventListener('click', ()=>{
+    custom_model.classList.add('model-open');
+    document.body.style.overflow='hidden';
+    pop_modal.setAttribute('src', "IMAGES/myLinkedin.jfif")
+    weblink.setAttribute('href', 'https://www.emiprotechnologies.com/')
+})
+
+image_3_icon.addEventListener('click', ()=>{
+    custom_model.classList.add('model-open');
+    document.body.style.overflow='hidden';
+    pop_modal.setAttribute('src', "IMAGES/myLinkedin.jfif")
+    weblink.setAttribute('href', 'https://www.emiprotechnologies.com/')
 })
 
 close.addEventListener('click', ()=>{
-    custom_model.classList.remove('model-open');
-    document.body.style.overflow='scroll';
-})
-
-custom_model.addEventListener('click', ()=>{
     custom_model.classList.remove('model-open');
     document.body.style.overflow='scroll';
 })
