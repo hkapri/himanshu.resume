@@ -2,6 +2,9 @@ html
 {
     scroll-behavior: smooth;
 }
+body {
+    color: none;
+}
 
 a, a:hover {
     color: inherit;
@@ -191,10 +194,8 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .body_container {
-    background-color: white;
     margin-left: 2.1rem;
     width: 70vw;
-    background-color: var(--color1);
     color: var(--text);
 }
 
@@ -403,6 +404,8 @@ a:hover, a:visited, a:link, a:active {
 .data_container{
     text-align: center;
     margin-top: 10vh;
+    border-radius: 25px;
+    background-color: var(--color1);
 }
 
 .subheading{
